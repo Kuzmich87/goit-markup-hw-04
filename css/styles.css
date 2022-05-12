@@ -80,10 +80,10 @@ ul {
 .address {
   margin-top: 20px;
 }
-.link.contacts {
+/*.link.contacts {
   display: inline-block;
   margin-top: 9px;
-}
+}*/
 .list.filtr {
   display: flex;
   margin-bottom: 34px;
@@ -134,6 +134,10 @@ ul {
 .list.post .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+/*Задает расположение иконок в футере*/
+.list.social {
+  display: flex;
+}
 
 /*Позиционирование текста в карточке портфолио*/
 .content {
@@ -155,7 +159,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 /*Размещение Иконок в Наших преимуществах*/
-.item.benefits::before {
+/*.item.benefits::before {
   display: block;
   content: '';
   height: 120px;
@@ -167,6 +171,7 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
 }
+*/
 /* Класс на цвет логотипа*/
 .logo {
   color: var(--accent-color);
@@ -266,6 +271,7 @@ ul {
 .title.social {
   color: var(--white-color);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* Класс скрывает семантический заголовок*/
@@ -395,6 +401,8 @@ ul {
 
 /* Стиль написание шрифта и цвет контактов*/
 .contacts .link {
+  display: flex;
+  align-items: center;
   font-style: normal;
   color: inherit;
   /*var(--primary-text-color);*/
@@ -402,6 +410,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /*Задает контакты в линию*/
 
@@ -410,11 +421,11 @@ ul {
   margin-left: auto;
 }
 /*Задает отступы сверху и снизу для контактов*/
-.contacts.list .link {
+/*.contacts.list .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
+}*/
 .contacts .item + .item {
   margin-left: 50px;
 }
@@ -469,25 +480,130 @@ ul {
 .social-link {
   margin-left: 70px;
   min-width: 206px;
-  outline: 1px solid red;
+}
+
+/*Иконки конверта и телефона*/
+
+.icon-envelope {
+  fill: #757575;
+  margin-right: 10px;
+}
+.icon-smartphone {
+  fill: #757575;
+  margin-right: 10px;
+}
+.icon-envelope:hover {
+  fill: #2196f3;
+}
+.icon-smartphone:hover {
+  fill: #2196f3;
+}
+
+.icon-envelope {
+  fill: #757575;
+  margin-right: 10px;
+}
+
+/*Иконки в наших приемуществах*/
+.icon-background {
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 /*=======================
-Иконки в моих преимуществах
-=========================*/
+Иконки соц сетей в нашей команде
+=================================*/
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.icon-antenna::before {
-  background-image: url('../images/webstudio/antenna.svg');
+  margin-top: 16px;
+  list-style: none;
+  padding: 0;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border: 50%;
+
+  color: #afb1b8;
 }
 
-.icon-clock::before {
-  background-image: url('../images/webstudio/clock.svg');
+.social-icon {
+  fill: currentColor;
+}
+.social.link:hover,
+.social.link:focus {
+  color: var(--white-color);
+  background-color: #2196f3;
 }
 
-.icon-diagram::before {
-  background-image: url('../images/webstudio/diagram.svg');
+/*Иконки наши клиенты*/
+
+.list.clients {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.link.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+}
+.link.clients:hover {
+  border-color: #2196f3;
+}
+.icon-clients {
+  fill: #afb1b8;
 }
 
-.icon-astronaut::before {
-  background-image: url('../images/webstudio/astronaut.svg');
+.icon-clients:hover {
+  fill: #2196f3;
+}
+.item.clients {
+  margin-right: 30px;
+}
+
+.item.clients:last-child {
+  margin-right: 0;
+}
+/*Стилизация ссылок ф футере соц.сети*/
+
+.social-list.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 16px;
+  list-style: none;
+  padding: 0;
+}
+. .social-link.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
 }
