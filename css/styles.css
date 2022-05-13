@@ -154,7 +154,9 @@ ul {
 
 /*Рамка для карточек Нашей команды*/
 .item.team {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /*Размещение Иконок в Наших преимуществах*/
 /*.item.benefits::before {
@@ -202,8 +204,9 @@ ul {
   color: inherit;
 }
 
-.link.post:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.list.post .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* Site nav*/
 .site-nav {
@@ -349,6 +352,7 @@ ul {
   /* text-align: center;*/
   letter-spacing: inherit;
   font-family: inherit;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -504,6 +508,7 @@ ul {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 /*=======================
@@ -559,6 +564,7 @@ ul {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
 
   color: #afb1b8;
 }
