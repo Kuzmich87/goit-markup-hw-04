@@ -414,6 +414,8 @@ ul {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: #757575;
 }
 /*Задает контакты в линию*/
 
@@ -486,25 +488,13 @@ ul {
 /*Иконки конверта и телефона*/
 
 .icon-envelope {
-  fill: #757575;
+  fill: currentColor;
   margin-right: 10px;
 }
 .icon-smartphone {
-  fill: #757575;
+  fill: currentColor;
   margin-right: 10px;
 }
-.icon-envelope:hover {
-  fill: #2196f3;
-}
-.icon-smartphone:hover {
-  fill: #2196f3;
-}
-
-.icon-envelope {
-  fill: #757575;
-  margin-right: 10px;
-}
-
 /*Иконки в наших приемуществах*/
 .icon-background {
   background-color: #f5f4fa;
@@ -541,6 +531,7 @@ ul {
   border: 50%;
 
   color: #afb1b8;
+  background-color: var(--white-color);
 }
 
 .social-icon {
@@ -568,16 +559,15 @@ ul {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
+
+  color: #afb1b8;
 }
 .link.clients:hover {
   border-color: #2196f3;
+  color: #2196f3;
 }
 .icon-clients {
-  fill: #afb1b8;
-}
-
-.icon-clients:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 .item.clients {
   margin-right: 30px;
