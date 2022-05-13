@@ -581,20 +581,26 @@ ul {
 .social-list.footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   margin-top: 16px;
   list-style: none;
   padding: 0;
 }
-. .social-link.footer {
+.social-link-footer.link {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
+}
+
+.social-link-footer.link:hover,
+.social-link-footer.link:focus {
+  background-color: #2196f3;
 }
